@@ -10,11 +10,7 @@ function App() {
     <GlobalContextProvider>
       <div className='app'>
         <Header />
-
-        <div id='main'>
-          <RoutesManager />
-        </div>
-
+        <RoutesManager />
         <Footer />
       </div>
     </GlobalContextProvider>
