@@ -1,5 +1,5 @@
 const requester = async (method, url, data) => {
-  const host = 'https://movie-characters.onrender.com';
+  const host = 'https://movie-characters-server.onrender.com';
   // const host = 'http://localhost:3030';
   try {
     let options = {
