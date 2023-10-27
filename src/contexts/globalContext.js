@@ -29,7 +29,6 @@ export const GlobalContextProvider = ({ children }) => {
     const querySend = `?search=${searchParams.search}&page=${initialPage}&category=${categoryValue}&sort=${sortValue}&userId=${
       initialUser ? initialUser._id : ''
     }`;
-    console.log('test');
     getAllCharacters(querySend).then((characters) => {
       setCharacters(characters);
     });

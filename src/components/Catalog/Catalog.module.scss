@@ -104,8 +104,8 @@
 
     .card {
       background-color: #ffebb3;
-      width: 200px;
-      height: 300px;
+      width: 280px;
+      height: 350px;
       border-radius: 25px;
       border: 1px solid #ffebb3;
       // box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
@@ -143,7 +143,7 @@
 
         .card-description {
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          // padding-left: 25px;
+          margin-left: 30px;
           display: -webkit-box;
           max-width: 200px;
           -webkit-line-clamp: 4;
