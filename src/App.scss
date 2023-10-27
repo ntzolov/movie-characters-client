@@ -1,0 +1,57 @@
+@import './components/Header/Header.module.scss';
+@import './components/Footer/Footer.module.scss';
+@import './components/Home/Home.module.scss';
+@import './components/LoginRegister/LoginRegister.module.scss';
+@import './components/Catalog/Catalog.module.scss';
+@import './components/Create/Create.module.scss';
+@import './components/Details/Details.module.scss';
+@import './components/NotFoundError/NotFoundError.module.scss';
+@import './components/News/News.module.scss';
+
+::selection {
+  background: #a863a8;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/movie-posters.jpg');
+  background-size: cover;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+#main {
+  flex: 1;
+  height: 100%;
+  margin-top: 53.5px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+}
+
+// Spinner ===
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted salmon;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// === Spinner

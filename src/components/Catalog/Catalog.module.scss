@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+.container-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .search-bar {
+    width: 100%;
+
+    form {
+      margin: auto;
+      padding: 15px;
+      max-width: 400px;
+
+      .search-input {
+        display: inline-block;
+        border-right: 1px solid rgb(41, 34, 34);
+        margin-bottom: 0;
+
+        width: 75%;
+      }
+
+      .search-submit {
+        display: inline-block;
+        background-color: rgb(131, 204, 109);
+        margin-bottom: 0;
+        cursor: pointer;
+        width: 25%;
+        padding: 0;
+      }
+    }
+  }
+
+  .container-category-and-sort {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+
+    .container-category {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+      margin-right: 10px;
+      color: #fff1c6;
+
+      label {
+        font-size: medium;
+        margin-right: 5px;
+        font-weight: 900;
+      }
+
+      select {
+        border: 1px solid white;
+        border-radius: 5px;
+
+        option {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .container-sort {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+      color: #fff1c6;
+
+      label {
+        font-size: medium;
+        margin-right: 5px;
+        font-weight: 900;
+      }
+
+      select {
+        border: 1px solid white;
+        border-radius: 5px;
+
+        option {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .card-container {
+    width: 100%;
+    min-height: 352px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    border-top: 2px solid #cb6074;
+    border-bottom: 2px solid #cb6074;
+    background-color: #ffffff25;
+
+    .card {
+      background-color: #ffebb3;
+      width: 200px;
+      height: 300px;
+      border-radius: 25px;
+      border: 1px solid #ffebb3;
+      // box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+      transition: 0.4s;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 25px 20px;
+
+      &:hover {
+        background-color: #ffd86b;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+
+        .info {
+          font-weight: bold;
+        }
+      }
+
+      .content {
+        text-align: center;
+        padding: 5px 10px 10px 10px;
+        color: #000;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+
+        h1 {
+          font-family: 'Gloock';
+          color: #3e63df;
+          font-size: 20px;
+        }
+
+        .card-description {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          // padding-left: 25px;
+          display: -webkit-box;
+          max-width: 200px;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .info {
+          text-align: center;
+        }
+      }
+
+      .image {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        background-color: #ffebb3;
+        border-bottom: 1px solid black;
+        object-fit:cover;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit:fill;
+        }
+      }
+    }
+  }
+
+  .container-items-per-page {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    color: #fff1c6;
+
+    label {
+      font-size: medium;
+      margin-right: 5px;
+      font-weight: 900;
+    }
+
+    select {
+      border: 1px solid white;
+      border-radius: 5px;
+
+      option {
+        border-radius: 10px;
+      }
+    }
+  }
+}
