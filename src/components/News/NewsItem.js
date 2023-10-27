@@ -8,29 +8,29 @@ export const NewsItem = ({ news }) => {
   const dateToShow = `${date}-${month}-${year} - ${hours}:${minutes}`;
 
   return (
-    <div className="blog-wrapper">
-      <div className="blog-card">
-        <div className="card-img">
-          <img src={news.urlToImage} alt="title img" />
+    <div className='blog-wrapper'>
+      <div className='blog-card'>
+        <div className='card-img'>
+          <img src={news.image} alt='title img' />
           <h1>{news.title}</h1>
         </div>
 
-        <div className="card-details">
+        <div className='card-details'>
           <span>
-            <i className="fa fa-calendar"></i>
+            <i className='fa fa-calendar'></i>
             {dateToShow}
           </span>
           <span>
-            <i className="fa-solid fa-at"></i>
-            {news.author}
+            <i className='fa-solid fa-at'></i>
+            {news.source.name}
           </span>
         </div>
-        <div className="card-text">
+        <div className='card-text'>
           <p>{news.description}</p>
         </div>
 
-        <a href={news.url} target="blank_">
-          <div className="read-more">Read more</div>
+        <a href={news.url} target='blank_'>
+          <div className='read-more'>Read more</div>
         </a>
       </div>
     </div>
