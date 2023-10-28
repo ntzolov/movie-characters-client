@@ -1,0 +1,80 @@
+.container-about {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  border: 2px solid #cb6074;
+  background-color: #ffffff25;
+  margin: 0 5px;
+  animation-name: frameInit;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+  .container-title-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    opacity: 0%;
+    animation-name: textInit;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+
+    .title {
+      font-family: Tahoma, Geneva, Verdana, sans-serif;
+      font-size: large;
+      font-weight: 700;
+      margin-right: 15px;
+      // color: #e48395;
+    }
+
+    .text {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: 900;
+      font-size: large;
+
+      a {
+        all: unset;
+        cursor: pointer;
+        color: #cb6074;
+        font-weight: 900;
+        text-decoration: underline;
+
+        &:hover {
+          color: #c03e56;
+        }
+      }
+    }
+  }
+
+  img {
+    height: 300px;
+    width: auto;
+    margin: 30px 20px;
+    opacity: 0%;
+    animation-name: textInit;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes frameInit {
+  100% {
+    width: 300px;
+    height: 600px;
+  }
+}
+
+@keyframes textInit {
+  100% {
+    opacity: 100%;
+  }
+}

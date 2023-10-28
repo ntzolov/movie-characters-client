@@ -19,7 +19,7 @@ export const News = () => {
     <div className='container-news'>
       {news.length ? (
         <>
-          <div className='news-title'>Last week top stories...</div>
+          <div className='news-title'>Most recent top stories...</div>
           {news.map((x) => (
             <NewsItem key={uuid()} news={x} />
           ))}
