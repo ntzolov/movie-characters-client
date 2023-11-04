@@ -23,7 +23,7 @@ export const RoutesManager = () => {
         <Route path='/' element={<Home />} />
         <Route path='/catalog' element={<Catalog />} />
         <Route path='/catalog/:characterId' element={<Details />} />
-        <Route path='/catalog/:characterId/edit' element={<Edit />} />
+        <Route path='/catalog/:characterId/edit' element={user ? <Edit /> : <ForbiddenError />} />
         <Route path='/create' element={user ? <Create /> : <ForbiddenError />} />
         <Route path='/news' element={user ? <News /> : <ForbiddenError />} />
         <Route path='/about' element={<About />} />

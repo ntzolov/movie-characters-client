@@ -97,7 +97,9 @@ export const GlobalContextProvider = ({ children }) => {
   const contextObject = {
     user,
     setUser,
+    setCreateError,
     createError,
+    setEditError,
     editError,
     characters,
     onDeleteSubmit,

@@ -3,7 +3,8 @@ import { globalContext } from '../../contexts/globalContext';
 import { useNavigate } from 'react-router-dom';
 
 export const Logout = () => {
-  const { setUser, setCategoryValue, setSearchValue, setPage, setSortValue } = useContext(globalContext);
+  const { setUser, setCategoryValue, setSearchValue, setPage, setSortValue, setEditError, setCreateError } =
+    useContext(globalContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,4 +18,6 @@ export const Logout = () => {
   setCategoryValue('all');
   setSortValue('none');
   setPage(1);
+  setEditError('');
+  setCreateError('');
 };

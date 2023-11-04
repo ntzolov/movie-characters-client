@@ -10,6 +10,8 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { SpinnerNote } from '../others/SpinnerNote';
+import { Delayed } from '../others/Delayed';
 
 export const Details = () => {
   const [character, setCharacter] = useState({});
@@ -156,6 +158,7 @@ export const Details = () => {
                   delete
                 </button>
 
+                {/* Modal window for delete button */}
                 <Dialog
                   open={open}
                   onClose={handleClose}
@@ -189,7 +192,12 @@ export const Details = () => {
           </button>
         </div>
       ) : (
-        <Spinner />
+        <>
+          <Spinner />
+          <Delayed waitBeforeShow={3000}>
+            <SpinnerNote />
+          </Delayed>
+        </>
       )}
     </>
   );

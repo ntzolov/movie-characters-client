@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { NewsItem } from './NewsItem';
 import { Spinner } from '../Spinner/Spinner';
 import { v4 as uuid } from 'uuid';
+import { Delayed } from '../others/Delayed';
+import { SpinnerNote } from '../others/SpinnerNote';
 
 export const News = () => {
   const [news, setNews] = useState([]);
@@ -25,7 +27,12 @@ export const News = () => {
           ))}
         </>
       ) : (
-        <Spinner />
+        <>
+          <Spinner />
+          <Delayed waitBeforeShow={3000}>
+            <SpinnerNote />
+          </Delayed>
+        </>
       )}
     </div>
   );

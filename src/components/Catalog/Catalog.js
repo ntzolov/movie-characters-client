@@ -9,6 +9,8 @@ import { paginationStyles } from '../../muiStyles/muiStyles';
 import { ItemsPerPage } from './ItemsPerPage';
 import { useNavigate } from 'react-router-dom';
 import { Sort } from './Sort';
+import { SpinnerNote } from '../others/SpinnerNote';
+import { Delayed } from '../others/Delayed';
 
 export const Catalog = () => {
   const { characters, user, page, setPage, searchParams, itemsPerPage } = useContext(globalContext);
@@ -41,12 +43,7 @@ export const Catalog = () => {
         {characters[0].error ? (
           <h1>No characters found!</h1>
         ) : (
-          charactersToDisplay.map((character) => (
-            <CatalogItem
-              key={character._id}
-              character={character}
-            />
-          ))
+          charactersToDisplay.map((character) => <CatalogItem key={character._id} character={character} />)
         )}
       </div>
       <Pagination
@@ -63,6 +60,11 @@ export const Catalog = () => {
       <ItemsPerPage />
     </div>
   ) : (
-    <Spinner />
+    <>
+      <Spinner />
+      <Delayed waitBeforeShow={3000}>
+        <SpinnerNote />
+      </Delayed>
+    </>
   );
 };

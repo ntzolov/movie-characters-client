@@ -8,6 +8,7 @@
 @import './components/NotFoundError/NotFoundError.module.scss';
 @import './components/News/News.module.scss';
 @import './components/About/About.module.scss';
+@import './components//others//SpinnerNote.module.scss';
 
 ::selection {
   background: #a863a8;
@@ -42,7 +43,7 @@ body {
   border: 5px dotted salmon;
   border-radius: 50%;
   display: inline-block;
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   animation: rotation 2s linear infinite;
 }
