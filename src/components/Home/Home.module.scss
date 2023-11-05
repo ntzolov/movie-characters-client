@@ -5,8 +5,8 @@
   justify-content: center;
   align-items: center;
   margin: 15px 5px;
-  border: 2px solid #cb6074;
-  // background-color: #cb60741a;
+  border: 2px solid var(--main-red);
+  // background-color: var(--main-red);
   // padding: 5px;
   // height: 280px;
 
@@ -19,14 +19,14 @@
 
   .home-content {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-left: 2px solid #cb6074;
+    border-left: 2px solid var(--main-red);
     margin-left: 10px;
     max-width: 300px;
     padding-left: 10px;
 
     h1 {
       font-size: 32px;
-      color: #fff1c6;
+      color: var(--light-yellow-text);
       margin-bottom: 20px;
     }
 
@@ -37,19 +37,19 @@
       a {
         all: unset;
         cursor: pointer;
-        color: #cb6074;
+        color: var(--main-red);
         font-weight: 900;
         text-decoration: underline;
 
         &:hover {
-          color: #c03e56;
+          color: var(--main-red-darker);
         }
       }
     }
 
     @media (max-width: 843px) {
       border-left: none;
-      border-top: 2px solid #cb6074;
+      border-top: 2px solid var(--main-red);
       margin-left: none;
       margin-top: 10px;
       padding-left: none;

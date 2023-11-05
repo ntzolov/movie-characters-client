@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 
 .container-create {
-  background: #f8f4e5;
+  background: var(--lighter-yellow-background);
   padding: 0 20px 20px 20px;
   margin: 5px 22px 22px 5px;
   border: 2px solid black;
-  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+  box-shadow: 15px 15px 1px var(--orange), 15px 15px 1px 2px black;
   flex: 1;
   max-width: 500px;
 
   h1 {
     text-align: center;
-    color: #2a293e;
+    color: var(--dark-blue-text);
   }
 
   .label-input {
@@ -20,7 +20,7 @@
     margin-top: 20px;
 
     label {
-      color: #2a293e;
+      color: var(--dark-blue-text);
       font-family: 'Fjalla One';
       font-size: larger;
       font-weight: 500;
@@ -33,7 +33,7 @@
 
 .error {
   text-align: center;
-  color: salmon;
+  color: var(--error-salmon);
   font-size: larger;
   font-weight: 900;
   margin-bottom: 10px;
@@ -49,14 +49,14 @@ input {
   margin-bottom: 15px;
   border: none;
   border-bottom: 2px solid rgb(97, 97, 97);
-  background: #f8f4e5;
+  background: var(--lighter-yellow-background);
   padding-left: 5px;
   outline: none;
-  color: black;
+  color: var(--dark-blue-text);
 }
 
 input:focus {
-  border-bottom: 2px solid #ffa580;
+  border-bottom: 2px solid var(--orange);
 }
 
 .button-create {
@@ -64,25 +64,25 @@ input:focus {
   margin: 0 auto;
   line-height: 28pt;
   padding: 0 20px;
-  background: #f8f4e5;
+  background: var(--lighter-yellow-background);
   letter-spacing: 2px;
   transition: 0.2s all ease-in-out;
   outline: none;
   border: 1px solid black;
-  box-shadow: 3px 3px 1px 1px #ffa580, 3px 3px 1px 2px black;
+  box-shadow: 3px 3px 1px 1px var(--orange), 3px 3px 1px 2px black;
 }
 .button-create:hover {
   box-shadow: none;
   cursor: pointer;
-  background: #ffa580;
+  background: var(--orange);
   border: 1px solid black;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-  border-bottom: 2px solid #95a4ff;
-  -webkit-text-fill-color: #2a293e;
-  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  border-bottom: 2px solid var(--orange);
+  -webkit-text-fill-color: var(--dark-blue-text);
+  -webkit-box-shadow: 0 0 0px 1000px var(--lighter-yellow-background) inset;
   transition: background-color 5000s ease-in-out 0s;
 }

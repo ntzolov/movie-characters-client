@@ -6,7 +6,7 @@ export const About = () => {
       <div className='container-about'>
         <div className='container-title-text'>
           <div className='title'>Used technologies:</div>
-          <div className='text'>React, Express, HTML, CSS</div>
+          <div className='text'>HTML, SASS, Express, React, Jest</div>
         </div>
         <div className='container-title-text'>
           <div className='title'>Contact me:</div>

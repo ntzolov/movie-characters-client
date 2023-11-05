@@ -1,8 +1,7 @@
 import { getUserData } from './userData';
 
 const requester = async (method, url, data) => {
-  const host = 'https://movie-characters-server.onrender.com';
-  // const host = 'http://localhost:3030';
+  const host = process.env.NODE_ENV === 'production' ? 'https://movie-characters-server.onrender.com' : 'http://localhost:3030';
 
   try {
     let options = {

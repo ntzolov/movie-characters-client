@@ -6,7 +6,7 @@
   align-items: center;
   width: 0;
   height: 0;
-  border: 2px solid #cb6074;
+  border: 2px solid var(--main-red);
   background-color: #ffffff25;
   margin: 0 5px;
   animation-name: frameInit;
@@ -43,12 +43,12 @@
       a {
         all: unset;
         cursor: pointer;
-        color: #cb6074;
+        color: var(--main-red);
         font-weight: 900;
         text-decoration: underline;
 
         &:hover {
-          color: #c03e56;
+          color: var(--main-red-darker);
         }
       }
     }

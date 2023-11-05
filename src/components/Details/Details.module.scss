@@ -6,8 +6,8 @@
   flex-direction: column;
   width: 600px;
   max-height: 600px;
-  background-color: #ffebb3;
-  border: 1px solid #ffebb3;
+  background-color: var(--light-yellow-background);
+  border: 1px solid var(--light-yellow-background);
   border-radius: 25px;
   overflow: hidden;
   position: relative;
@@ -30,7 +30,7 @@
     h1 {
       width: 30%;
       font-family: 'Gloock';
-      color: #3e63df;
+      color: var(--blue);
       font-size: 25px;
       align-self: center;
       margin-left: 10px;
@@ -46,7 +46,8 @@
       font-size: medium;
 
       .section-title {
-        color: #395b85;
+        font-weight: 900;
+        color: var(--dark-blue);
         text-align: center;
         text-decoration: underline;
       }
@@ -107,18 +108,18 @@
       display: block;
       line-height: 28pt;
       padding: 0 10px;
-      background: #f8f4e5;
+      background: var(--lighter-yellow-background);
       letter-spacing: 2px;
       transition: 0.2s all ease-in-out;
       outline: none;
       border: 1px solid black;
-      box-shadow: 3px 3px 1px 1px #61c966, 3px 3px 1px 2px black;
+      box-shadow: 3px 3px 1px 1px var(--light-green), 3px 3px 1px 2px black;
       margin-right: 10px;
 
       &:hover {
         box-shadow: none;
 
-        background: #61c966;
+        background: var(--light-green);
         border: 1px solid black;
       }
     }
@@ -129,17 +130,17 @@
       display: block;
       line-height: 28pt;
       padding: 0 10px;
-      background: #f8f4e5;
+      background: var(--lighter-yellow-background);
       letter-spacing: 2px;
       transition: 0.2s all ease-in-out;
       outline: none;
       border: 1px solid black;
-      box-shadow: 3px 3px 1px 1px #be6246, 3px 3px 1px 2px black;
+      box-shadow: 3px 3px 1px 1px var(--error-salmon), 3px 3px 1px 2px black;
       margin-right: 10px;
 
       &:hover {
         box-shadow: none;
-        background: #be6246;
+        background: var(--error-salmon);
         border: 1px solid black;
       }
     }
@@ -152,7 +153,7 @@
     text-align: center;
     font-size: larger;
     padding: 20px;
-    background-color: #ffd86b;
+    background-color: var(--dark-yellow-background);
     color: black;
 
     &:hover {
@@ -176,7 +177,7 @@
       h1 {
         width: 100%;
         font-family: 'Gloock';
-        color: #3e63df;
+        color: var(--blue);
         font-size: 25px;
         align-self: center;
         margin-left: 10px;

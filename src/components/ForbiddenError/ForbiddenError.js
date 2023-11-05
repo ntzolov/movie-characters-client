@@ -1,11 +1,11 @@
 export const ForbiddenError = () => {
   return (
     <>
-      <div className="error-404">
+      <div className='error-404'>
         <h1>
           4
           <span>
-            <i className="fas fa-ghost"></i>
+            <i className='fas fa-ghost'></i>
           </span>
           3
         </h1>

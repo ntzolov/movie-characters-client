@@ -29,7 +29,7 @@ export const News = () => {
       ) : (
         <>
           <Spinner />
-          <Delayed waitBeforeShow={3000}>
+          <Delayed waitBeforeShow={5000}>
             <SpinnerNote />
           </Delayed>
         </>

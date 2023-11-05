@@ -6,12 +6,12 @@
   position: relative;
   max-width: 850px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   padding: 40px 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   perspective: 2700px;
-  border: 1px solid white;
-  color: #dfdfdf;
+  border: 1px solid var(--white);
+  // color: var(--lighter-yellow-background);
   margin: 5px 5px;
 }
 .container-auth .cover {
@@ -81,7 +81,7 @@
 .cover .text .text-2 {
   font-size: 26px;
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
   text-align: center;
 }
 .cover .text .text-2 {
@@ -92,7 +92,7 @@
   transform: rotateY(180deg);
 }
 .warning {
-  color: salmon;
+  color: var(--error-salmon);
   padding-top: 15px;
   text-align: center;
   font-weight: 900;
@@ -100,7 +100,7 @@
 .container-auth .forms {
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: var(--white);
 }
 .container-auth .form-content {
   display: flex;
@@ -124,7 +124,7 @@
   bottom: 0;
   height: 3px;
   width: 25px;
-  background: #cb6074;
+  background: var(--main-red);
 }
 .forms .signup-form .title:before {
   width: 20px;
@@ -153,13 +153,13 @@
 }
 .form-content .input-box input:focus,
 .form-content .input-box input:valid {
-  border-color: #cb6074;
+  border-color: var(--main-red);
 }
 .form-content .input-box i {
   margin-bottom: 15px;
   margin-left: 5px;
   position: absolute;
-  color: #cb6074;
+  color: var(--main-red);
   font-size: 17px;
 }
 .forms .form-content .text {
@@ -174,22 +174,22 @@
   text-decoration: underline;
 }
 .forms .form-content .button {
-  color: #fff;
+  color: var(--white);
   margin-top: 40px;
 }
 .forms .form-content .button input {
-  color: #fff;
-  background: #cb6074;
+  color: var(--white);
+  background: var(--main-red);
   border-radius: 6px;
   padding: 0;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 .forms .form-content .button input:hover {
-  background: #c03e56;
+  background: var(--main-red-darker);
 }
 .forms .form-content label {
-  color: #cb6074;
+  color: var(--main-red);
   cursor: pointer;
 }
 .forms .form-content label:hover {

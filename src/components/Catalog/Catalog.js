@@ -62,7 +62,7 @@ export const Catalog = () => {
   ) : (
     <>
       <Spinner />
-      <Delayed waitBeforeShow={3000}>
+      <Delayed waitBeforeShow={5000}>
         <SpinnerNote />
       </Delayed>
     </>

@@ -9,7 +9,7 @@
 
 .topnav {
   overflow: hidden;
-  background-color: #313131;
+  background-color: var(--dark-grey);
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -25,8 +25,8 @@
     transition: 0.2s all ease-out;
 
     &:hover {
-      background-color: #ff8f62;
-      color: white;
+      background-color: var(--orange-button);
+      color: var(--white);
     }
   }
 
@@ -38,15 +38,15 @@
 }
 
 .active {
-  background-color: #ff8f62;
-  color: white;
+  background-color: var(--orange-button);
+  color: var(--white);
 }
 
 #firstNavChild {
   position: absolute;
   left: 0;
   padding: 0;
-  background-color: #313131 !important;
+  background-color: var(--dark-grey) !important;
 }
 
 @media screen and (max-width: 600px) {

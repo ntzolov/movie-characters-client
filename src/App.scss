@@ -10,6 +10,25 @@
 @import './components/About/About.module.scss';
 @import './components//others//SpinnerNote.module.scss';
 
+:root {
+  --white: white;
+  --blue: #3e63df;
+  --dark-blue: #395b85;
+  --orange: #ffa580;
+  --dark-grey: #313131;
+  --main-red: #cb6074;
+  --main-red-darker: #c03e56;
+  --orange-button: #ff8f62;
+  --white-text: #f0e7e7;
+  --light-yellow-text: #fff1c6;
+  --dark-blue-text: #2a293e;
+  --light-green: rgb(131, 204, 109);
+  --light-yellow-background: #ffebb3;
+  --lighter-yellow-background: #f8f4e5;
+  --dark-yellow-background: #ffd86b;
+  --error-salmon: salmon;
+}
+
 ::selection {
   background: #a863a8;
 }
@@ -33,14 +52,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: antiquewhite;
+  color: var(--light-yellow-text);
 }
 
 // Spinner ===
 .loader {
   width: 48px;
   height: 48px;
-  border: 5px dotted salmon;
+  border: 5px dotted var(--error-salmon);
   border-radius: 50%;
   display: inline-block;
   position: absolute;

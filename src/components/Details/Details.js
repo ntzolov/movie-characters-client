@@ -194,7 +194,7 @@ export const Details = () => {
       ) : (
         <>
           <Spinner />
-          <Delayed waitBeforeShow={3000}>
+          <Delayed waitBeforeShow={5000}>
             <SpinnerNote />
           </Delayed>
         </>
