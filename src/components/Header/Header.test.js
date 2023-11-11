@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import { Header } from './Header';
 import { BrowserRouter } from 'react-router-dom';
 import { GlobalContextProvider } from '../../contexts/globalContext';
-import userEvent from '@testing-library/user-event';
 
 describe('Footer component tests', function () {
   it('contains 3 or more links', () => {
