@@ -9,17 +9,17 @@ export const SearchBar = () => {
   };
 
   return (
-    <div className="search-bar">
+    <div className='search-bar'>
       <form onSubmit={(e) => onSearchSubmit(e)}>
         <input
           onChange={onSearchChange}
           value={searchValue}
-          type="search"
-          className="search-input"
-          name="search"
-          placeholder="Search character..."
+          type='search'
+          className='search-input'
+          name='search'
+          placeholder='Search character...'
         />
-        <input type="submit" className="search-submit" value="Search" />
+        <input type='submit' className='search-submit' value='Search' />
       </form>
     </div>
   );

@@ -33,7 +33,7 @@ export const Catalog = () => {
   };
 
   return characters.length ? (
-    <div className='container-catalog'>
+    <div className='container-catalog' data-testid='characters-container'>
       <SearchBar />
       <div className='container-category-and-sort'>
         {user && <Category />}

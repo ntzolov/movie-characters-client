@@ -8,13 +8,13 @@ export const CatalogItem = ({ character }) => {
   };
 
   return (
-    <div className="card" onClick={onCharacterClick}>
-      <div className="image">
-        <img src={character.imageUrl} alt="" />
+    <div className='card' onClick={onCharacterClick}>
+      <div className='image'>
+        <img src={character.imageUrl} alt={character.name} />
       </div>
-      <div className="content">
+      <div className='content'>
         <h1>{character.name}</h1>
-        <p className="card-description">{character.description}</p>
+        <p className='card-description'>{character.description}</p>
         {/* <p className="info">Click for more</p> */}
       </div>
     </div>

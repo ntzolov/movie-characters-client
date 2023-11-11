@@ -3,7 +3,7 @@ import logos from '../../images/logos.png';
 export const About = () => {
   return (
     <>
-      <div className='container-about'>
+      <div className='container-about' data-testid='about-container'>
         <div className='container-title-text'>
           <div className='title'>Used technologies:</div>
           <div className='text'>HTML, SASS, Express, React, Jest</div>
@@ -22,7 +22,7 @@ export const About = () => {
             <a href='https://t.me/ntzolov'>My Telegram</a>
           </div>
         </div>
-        <img src={logos} alt='' />
+        <img src={logos} alt='superheroes logos' />
         <div className='container-title-text'>
           <div className='title'>Note:</div>
           <div className='text'>

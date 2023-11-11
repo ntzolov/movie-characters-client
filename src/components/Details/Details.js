@@ -98,7 +98,7 @@ export const Details = () => {
         <div className='container-details'>
           <div className='image-title'>
             <div className='image'>
-              <img src={character.imageUrl} alt='' />
+              <img src={character.imageUrl} alt={character.name} />
             </div>
             <h1>{character.name}</h1>
           </div>

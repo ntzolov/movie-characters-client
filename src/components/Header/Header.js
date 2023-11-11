@@ -34,53 +34,53 @@ export const Header = () => {
   }
 
   return (
-    <div className="nav">
-      <div className="topnav" id="myTopnav">
+    <div className='nav'>
+      <div className='topnav' id='myTopnav'>
         <NavLink
-          to="/"
+          to='/'
           // className={({ isActive }) => (isActive ? 'active' : '')}
-          id="firstNavChild"
+          id='firstNavChild'
           onClick={onResponsiveMenuClick}>
-          <img src={logo} alt="" />
+          <img src={logo} alt='logo' />
         </NavLink>
 
         <NavLink
-          to="/catalog?search=&page=1"
+          to='/catalog?search=&page=1'
           className={({ isActive }) => (isActive ? 'active' : '')}
           onClick={onCatalogClickHandler}>
           Catalog
         </NavLink>
         {user ? (
           <>
-            <NavLink to="/create" className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
+            <NavLink to='/create' className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
               Create
             </NavLink>
 
-            <NavLink to="/news" className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
+            <NavLink to='/news' className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
               News
             </NavLink>
 
-            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
+            <NavLink to='/about' className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
               About
             </NavLink>
 
-            <NavLink to="/logout" className={({ isActive }) => (isActive ? 'active' : '')} onClick={onLogoutHandler}>
+            <NavLink to='/logout' className={({ isActive }) => (isActive ? 'active' : '')} onClick={onLogoutHandler}>
               Logout
             </NavLink>
           </>
         ) : (
           <>
-            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
+            <NavLink to='/about' className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
               About
             </NavLink>
 
-            <NavLink to="/auth" className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
+            <NavLink to='/auth' className={({ isActive }) => (isActive ? 'active' : '')} onClick={onResponsiveMenuClick}>
               Login / Register
             </NavLink>
           </>
         )}
 
-        <NavLink style={{ fontSize: '15px' }} className="icon" onClick={toggleDropdown}>
+        <NavLink style={{ fontSize: '15px' }} className='icon' onClick={toggleDropdown}>
           &#9776;
         </NavLink>
 
