@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 export const SpinnerNote = () => {
-  const [counter, setCounter] = useState(5);
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => setCounter((state) => state + 1), 1000);
