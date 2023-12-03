@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer>
       <div className='footer'>
         <span>
-          All rights reserved &#169; - <Link to={'https://github.com/ntzolov'}>Give me a &#9733; &#9786;</Link>
+          All rights reserved &#169; - <Link target='blank' to={'https://github.com/ntzolov/movie-characters-client'}>Give me a &#9733; &#9786;</Link>
         </span>
       </div>
     </footer>
