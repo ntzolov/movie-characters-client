@@ -1,6 +1,9 @@
 # FrontendService 
 `Website` - https://movie-characters.onrender.com
 
+### Screenshot
+![screenshot](https://github.com/ntzolov/movie-characters-client/assets/114406139/86754031-cdb4-42c7-9af4-174b6df72ef3)
+
 `movie-characters` is designed to provide a seamless and user-friendly experience for movie enthusiasts. It is `fully responsive` layout, ensuring an optimal viewing and interactive experience across a variety of devices. Whether you're exploring a catalog of movie characters, managing your favorite characters, or staying updated with the latest news in the movie industry.
 
 Feel free to explore the following sections to learn more about the capabilities and usage of my frontend application.
@@ -96,6 +99,7 @@ Enjoy these features and more as you immerse yourself in the world of `movie-cha
 - React - (hooks, custom hooks, state management, testing (JEST, CHAI)).
 - Basic arhitecture of an SPA application.
 - Full-Stack communication - [My server](https://github.com/ntzolov/movie-characters-backend)
+- Deploying the app [render.com](https://render.com/)
 
 ## License 📝 <a name="license"></a>
 
