@@ -1,4 +1,5 @@
-# BackendService - https://movie-characters-server.onrender.com
+# BackendService 
+`Host` - https://movie-characters-server.onrender.com
 
 This is a backend application that powers the core functionality of http://movie-characters.onrender.com webside. It handles user authentication, data processing, and serves as the API gateway for seamless communication with the frontend.
 
@@ -58,7 +59,6 @@ The backend server will be running at http://localhost:3030.
 
 ### Authentication
 
-`Host` - https://movie-characters-server.onrender.com<BR>
 To use the authentication features of BackendService, you need to obtain an authentication token. Make a `POST` request to the following endpoints with valid credentials:
 
 - #### POST /auth/register
