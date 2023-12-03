@@ -1,34 +1,48 @@
-# BackendService 
-`Host` - https://movie-characters-server.onrender.com
+# FrontendService 
+`Website` - https://movie-characters.onrender.com
 
-This is a backend application that powers the core functionality of http://movie-characters.onrender.com webside. It handles user authentication, data processing, and serves as the API gateway for seamless communication with the frontend.
+`movie-characters` is designed to provide a seamless and user-friendly experience for movie enthusiasts. It is `fully responsive` layout, ensuring an optimal viewing and interactive experience across a variety of devices. Whether you're exploring a catalog of movie characters, managing your favorite characters, or staying updated with the latest news in the movie industry.
 
-## Technology Stack
+Feel free to explore the following sections to learn more about the capabilities and usage of my frontend application.
 
-- **Node.js:** v14.17.4
-- **Express:** v4.18.2 - Fast, unopinionated, minimalist web framework for Node.js.
-- **Mongoose:** v7.5.3 - Elegant MongoDB object modeling for Node.js.
-- **bcrypt:** v5.1.1 - Library for hashing passwords.
-- **jsonwebtoken:** v9.0.2 - JSON Web Token (JWT) implementation for Node.js.
-- **cors:** v2.8.5 - Cross-Origin Resource Sharing middleware for Express.
-- **dotenv:** v16.3.1 - Zero-dependency module to load environment variables from a .env file.
-- **nodemon:** v3.0.1 - Utility that monitors for changes in files and automatically restarts the server.
+## Table of Contents
 
-## Installation
+1. [Technology Stack](#technology-stack)
+2. [Installation](#installation)
+3. [Features](#features)
+4. [What I've Learned](#what-i-have-learned)
+5. [License](#license)
 
-Follow these steps to set up and run the BackendService locally on your machine.
+## Technology Stack 🛠️ <a name="technology-stack"></a>
 
-### Prerequisites
+| Technology                         | Version     | Description                                       |
+| ---------------------------------- | ----------- | ------------------------------------------------- |
+| **@emotion/react**                  | v11.11.1    | Library for writing styles with JavaScript        |
+| **@emotion/styled**                 | v11.11.0    | Utility function for creating styled components   |
+| **@mui/material**                   | v5.14.11    | React components that implement Google's Material Design |
+| **@testing-library/jest-dom**      | v5.17.0     | Custom jest matchers for asserting on DOM nodes   |
+| **@testing-library/react**          | v13.4.0     | Simple and complete testing utilities for React   |
+| **@testing-library/user-event**    | v13.5.0     | Fire events the same way the user does in tests   |
+| **node-fetch**                     | v3.3.2      | A light-weight module that brings window.fetch to Node.js |
+| **react**                          | v18.2.0     | A JavaScript library for building user interfaces |
+| **react-dom**                      | v18.2.0     | React package for working with the DOM            |
+| **react-router-dom**               | v6.16.0     | DOM bindings for React Router                     |
+| **react-scripts**                  | v5.0.1      | Scripts and configuration used by Create React App |
+| **sass**                           | v1.68.0     | CSS preprocessor                                  |
+| **uuid**                           | v9.0.1      | Generate RFC-compliant UUIDs                      |
+| **web-vitals**                     | v2.1.4      | Library for measuring web vitals                  |
 
-Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (v14.17.4 or higher)
+
+## Installation 🔽 <a name="installation"></a>
+
+Follow these steps to set up and run the FrontendService locally on your machine.
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/ntzolov/movie-characters-backend.git
-cd movie-characters-backend
+git clone https://github.com/ntzolov/movie-characters-client.git
+cd movie-characters-client
 ```
 
 ### Install Dependencies
@@ -37,87 +51,53 @@ cd movie-characters-backend
 npm install
 ```
 
-### Set Environment Variables
-
-Create a .env file in the root of the project and add the following:
-
-```env
-SECRET = 'mG8tdLPPNJ0wpEOI0DnKz5YCEuJMbcGp'
-MONGO_URL = 'mongodb+srv://ntzolov:zZYLb8iwd7rDyaac@movie-characters.vtrawke.mongodb.net/movieCharacters?retryWrites=true&w=majority'
-PORT = '3030'
-```
-
-### Start the Server
+### Start the App
 
 ```bash
 npm start
 ```
 
-The backend server will be running at http://localhost:3030.
+`Note` - For full expirience you have to have [the server](https://github.com/ntzolov/movie-characters-backend) running locally
 
-## Usage
+Open your browser and navigate to http://localhost:3000 to explore `movie-characters`! You can register, log in, and start interacting with the catalog of movie characters. If you're logged in, you'll have access to additional features like character management, favorites, and more.
 
-### Authentication
+## Features  <a name="features"></a>
 
-To use the authentication features of BackendService, you need to obtain an authentication token. Make a `POST` request to the following endpoints with valid credentials:
+Explore the exciting features of `movie-characters`:
 
-- #### POST /auth/register
-  - Register new user.
-- #### POST /auth/login
-  - Login existing user.
-- #### GET /auth/logout
-  - Logout logged user.
+### Movie Catalog
 
-### Resources
+Browse through a diverse catalog of movie characters. Whether you're a fan of classic films or the latest blockbusters, our movie catalog has characters from various genres.
 
-- #### GET /characters
-  - Get all characters.
-- #### POST /characters
-  - Create a character.
-- #### PUT /characters/:characterId
-  - Edit character by ID.
-- #### GET /characters/:characterId
-  - Get character by ID.
-- ####  DELETE /characters/:characterId
-  - Delete character by ID.
+### Character Management
 
-## Database schema
+If you're logged in, take control with character management:
 
-### Users Collection
+- **Create:** Add new characters to the catalog.
+- **Edit:** Update information for existing characters.
+- **Delete:** Remove characters you no longer need.
 
-The `users` collection stores information about registered users.
+### Favorites and Likes
 
-| Field       | Type     | Description               |
-|-------------|----------|---------------------------|
-| _id         | ObjectId | Unique user identifier    |
-| username    | String   | User's username           |
-| password    | String   | Hashed user password      |
-| characters  | Array    | List of user's characters |
-| isAdmin     | Boolean  | Is user have admin role   |
+Enhance your experience by:
 
-### Resources Collection
+- **Favorites:** Add characters to your favorites list for quick access.
+- **Likes:** Show your appreciation by giving characters a thumbs up.
 
-The `resources` collection holds data about various characters.
+### News Section
 
-| Field       | Type     | Description               |
-|-------------|----------|---------------------------|
-| _id         | ObjectId | Unique character identifier|
-| name        | String   | Character name             |
-| imageURL    | String   | Link with character image |
-| createdBy   | String   | Character's creator       |
-| performedBy | String   | Character's performers    |
-| firstAppearance | String   | Character's first movie appearance |
-| description | String   | Character's description   |
-| famousLine  | String   | Character's famous line   |
-| likes       | Number   | Character's total likes   |
-| usersLiked  | [ObjectId] | List of users who liked the character |
-| usersFavorited | [ObjectId] | List of users who favorited the character |
-| ownerId     | ObjectId | Character's owner ID      |
-| createdAt   | Date     | Date of creating the character |
-| lastEdit    | Date     | Date of character's last edit |
-| _ownerUsername | String   | Character's owner username |
+Stay informed about the latest news in the movie industry. From upcoming releases to behind-the-scenes insights, our news section keeps you in the loop.
 
-## License
+Enjoy these features and more as you immerse yourself in the world of `movie-characters`. Happy exploring!
+
+## What I've Learned <a name="what-i-have-learned"></a>
+
+- Creating a SPA application with React. (CRA)
+- React - (hooks, custom hooks, state management, testing (JEST, CHAI)).
+- Basic arhitecture of an SPA application.
+- Full-Stack communication - [My server](https://github.com/ntzolov/movie-characters-backend)
+
+## License 📝 <a name="license"></a>
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
