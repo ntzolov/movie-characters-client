@@ -66,7 +66,7 @@ npm start
 
 Open your browser and navigate to http://localhost:3000 to explore `movie-characters`! You can register, log in, and start interacting with the catalog of movie characters. If you're logged in, you'll have access to additional features like character management, favorites, and more.
 
-## Features  <a name="features"></a>
+## Features ✅ <a name="features"></a>
 
 Explore the exciting features of `movie-characters`:
 
@@ -95,7 +95,7 @@ Stay informed about the latest news in the movie industry. From upcoming release
 
 Enjoy these features and more as you immerse yourself in the world of `movie-characters`. Happy exploring!
 
-## What I've Learned <a name="what-i-have-learned"></a>
+## What I've Learned 🎒 <a name="what-i-have-learned"></a>
 
 - Creating a SPA application with React. (CRA)
 - React - (hooks, custom hooks, state management, testing (JEST, CHAI)).
