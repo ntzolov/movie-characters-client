@@ -1,4 +1,4 @@
-import { getUserData } from './userDAta';
+import { getUserData } from './userData';
 
 const requester = async (method, url, data) => {
   const host = process.env.NODE_ENV === 'production' ? 'https://movie-characters-server.onrender.com' : 'http://localhost:3030';
