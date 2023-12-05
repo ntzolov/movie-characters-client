@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useUser from '../hooks/useUser';
 import { createCharacter, deleteCharacterById, editCharacter, getAllCharacters } from '../services/characterServices';
+import { createEditValidation } from '../utils/formValidators';
 
 export const globalContext = createContext();
 
@@ -38,6 +39,8 @@ export const GlobalContextProvider = ({ children }) => {
     try {
       e.preventDefault();
 
+      createEditValidation(createValues);
+
       createValues._ownerId = user._id;
       createValues._ownerUsername = user.username;
       createValues.createdAt = Date.now();
@@ -55,6 +58,8 @@ export const GlobalContextProvider = ({ children }) => {
   const onEditSubmit = async (e, characterId, editValues) => {
     try {
       e.preventDefault();
+
+      createEditValidation(editValues);
 
       editValues.lastEdit = Date.now();
       const editedCharacter = await editCharacter(characterId, editValues);
@@ -74,7 +79,7 @@ export const GlobalContextProvider = ({ children }) => {
       const deletedCharacter = await deleteCharacterById(characterId);
       setCharacters((state) => state.filter((x) => x._id !== deletedCharacter._id));
 
-      navigate(-1);
+      navigate('/catalog');
     } catch (error) {
       console.log(error);
     }

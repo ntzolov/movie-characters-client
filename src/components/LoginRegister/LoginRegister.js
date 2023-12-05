@@ -4,6 +4,7 @@ import { useContext, useState } from 'react';
 import { login, register } from '../../services/authServices';
 import { useNavigate } from 'react-router-dom';
 import { globalContext } from '../../contexts/globalContext';
+import { loginValidation, registerValidation } from '../../utils/formValidators';
 
 export const LoginRegister = () => {
   const { setUser } = useContext(globalContext);
@@ -28,6 +29,7 @@ export const LoginRegister = () => {
     e.preventDefault();
 
     try {
+      loginValidation(loginValues)
       const user = await login(loginValues);
       setUser(user);
 
@@ -45,6 +47,7 @@ export const LoginRegister = () => {
     e.preventDefault();
 
     try {
+      registerValidation(registerValues);
       const user = await register(registerValues);
       setUser(user);
 
