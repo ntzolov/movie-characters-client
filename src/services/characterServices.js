@@ -1,4 +1,5 @@
 import * as request from '../utils/requester';
+import { trimmer } from '../utils/trimmer';
 
 export const getAllCharacters = async (query) => {
   try {
@@ -26,6 +27,8 @@ export const getCharacterById = async (characterId) => {
 
 export const createCharacter = async (characterObject) => {
   try {
+    trimmer(characterObject);
+
     const result = await request.post('/characters', characterObject);
 
     return result;
@@ -36,6 +39,8 @@ export const createCharacter = async (characterObject) => {
 
 export const editCharacter = async (characterId, characterObject) => {
   try {
+    trimmer(characterObject);
+
     const result = await request.put(`/characters/${characterId}`, characterObject);
 
     return result;
