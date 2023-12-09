@@ -29,7 +29,7 @@ export const LoginRegister = () => {
     e.preventDefault();
 
     try {
-      loginValidation(loginValues)
+      loginValidation(loginValues);
       const user = await login(loginValues);
       setUser(user);
 

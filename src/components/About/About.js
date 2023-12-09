@@ -19,7 +19,7 @@ export const About = () => {
               My GitHub
             </a>
             ,&nbsp;
-            <a href='https://t.me/ntzolov'>My Telegram</a>
+            <a href='https://t.me/ntzolov' target='blank'>My Telegram</a>
           </div>
         </div>
         <img src={logos} alt='superheroes logos' />
