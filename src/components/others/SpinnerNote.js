@@ -13,8 +13,9 @@ export const SpinnerNote = () => {
   return (
     <h3 className='spinner-note'>
       <span style={{ color: 'orange' }}>Note: </span>
-      If you have trouble with endless loading, that may happened because of my hosting service. Try to wait 30sec. for waking up
-      my service. If still doesn't work please refresh the page! <span style={{ color: 'orange' }}>{counter}</span>sec.
+      If you have trouble with endless loading, that may happened because of my hosting service. Try
+      to wait 60sec. for waking up my service. If still doesn't work please refresh the page!{' '}
+      <span style={{ color: 'orange' }}>{counter}</span>sec.
     </h3>
   );
 };
